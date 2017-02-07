@@ -1,0 +1,6 @@
+#!/bin/sh
+
+
+
+for d in ./*/ ; do (cd "$d" && for file in `grep -rl 'import javax.crypto' *`; do git blame $file |grep 'import javax.crypto'; wc -l $file; done); done > resultado_crypto.csv
+

@@ -1,0 +1,6 @@
+#!/bin/sh
+
+
+
+for d in ./*/ ; do (cd "$d" && for file in `grep -rl 'import org.elasticsearch' *`; do git blame $file |grep 'import org.elasticsearch'; wc -l $file; done); done > resultado_elastic.csv
+

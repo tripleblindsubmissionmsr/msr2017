@@ -1,0 +1,6 @@
+#!/bin/sh
+
+
+
+for d in ./*/ ; do (cd "$d" && for file in `grep -rl 'import org.apache.hadoop' *`; do git blame $file |grep 'import org.apache.hadoop'; wc -l $file; done); done > resultado_blame.csv
+
