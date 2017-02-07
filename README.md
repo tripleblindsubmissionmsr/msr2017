@@ -1,7 +1,7 @@
 #  MSR 2017 Blind Submission
 Repository to harbour experiment material (MSR 2017 Submission)
 
-
+# Reaching Passionate Developers in a Sea of Data. Selecting Developers Across GitHub Projects
 
 Abstract
 
